@@ -90,11 +90,11 @@ def calcDryingWindows():
     k = k + 1
 
 
-calcDryingWindows()
+#calcDryingWindows()
 
  
 
 
 
 #print(len(dryingHours))
-#print(len(dryingWindows))
+#print(dryingWindows)
