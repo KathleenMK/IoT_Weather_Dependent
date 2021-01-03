@@ -21,6 +21,7 @@ def calcDryingWindows():
  URL = 'https://prodapi.metweb.ie/weather/details/52.16235/-7.15244';
 
 # sending get request and saving response as response object
+ global r
  r = requests.get(url = URL).json() # r below is a python list, of length 97ish
 
 
@@ -36,7 +37,7 @@ def calcDryingWindows():
  global dryingHours
  dryingHours=[] #defining an empty array to be populated with hours that meet the drying criteria
  while i < len(r):  #while loop to check each entry in the above response "r"
-      if float(r[i]["rainfall"]) == 0 and float(r[i]["humidity"]) <= 95 and r[i]["time"] >= "07:00" and r[i]["time"] < "19:00": 
+      if float(r[i]["rainfall"]) == 0 and float(r[i]["humidity"]) <= 95 and r[i]["time"] >= "07:00" and r[i]["time"] < "19:00" and int(r[i]["temperature"]) > 1: 
         dryingHours.append(tuple((i,r[i]["shortDayName"],r[i]["time"],r[i]["humidity"],r[i]["rainfall"],r[i]["dayNumber"])))
       i = i + 1
 

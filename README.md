@@ -10,7 +10,7 @@ AIM
 
 pic
 
-<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/image/Screenshot_blynk.jpg?raw=true" alt="BlynkScreenShot" width="250"/>
+<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/Screenshot_blynk.jpg?raw=true" alt="BlynkScreenShot" width="250"/>
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/Screenshot_blynk_off.jpg?raw=true" alt="BlynkScreenShotOff" width="250"/>
 
 Beginning in the top left:
