@@ -7,6 +7,7 @@
 The aim of the project is to to define weather dependent “windows of opportunity”, get local weather forecast data, identify and take an action to make use of those opportunities.
 
 ## Blynk App
+============
 
 <p>
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/Screenshot_blynk.jpg?raw=true" alt="BlynkScreenShot" width="250"/>
@@ -16,6 +17,7 @@ There are two web page buttons, first in the top right to www.met.ie for the loc
 </p>
 
 ## Raspberry Pi
+===============
 
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/pi.jpg" alt="BlynkScreenShotOff" width="250"/>
 
@@ -23,17 +25,20 @@ Interfaces with the Blynk app, runs the python script that interfaces with the B
 
 ### Web API
 Provides the hourly local forcast that can be processed by a python sccript and resultant output
+https://prodapi.metweb.ie/weather/details/52.16235/-7.15244
+
 
 ### Sensors
 
-Rain Sensor Module:
-Circuit details
-GPIO 18, GND and 3V
+Rain Sensor Module Circuit details:
+- GPIO 18 (pin #12)
+- GND (pin #14)
+- 3V (pin #17)
 
 Rain and hummidity sensor DHT11:
-Sensor Vcc+ to Raspberry Pi 5V
-GND to GND
-Signal to Pin 7, GPIO Pin 4
+- Sensor Vcc+ to Raspberry Pi 5V (pin 4)
+- GND to GND (pin 6)
+- Signal GPIO Pin 4 (pin 7)
 Circuit details
 
 ### Python script
@@ -43,5 +48,6 @@ Processes all the above and sends to Blynk
 Displays current status, takes input for begining or ending the drying process
 
 
-### ThingSpeak Account
-<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/thingspeak.png" alt="ThingSpeakCharts" width="250"/>
+## ThingSpeak Channel
+<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/thingspeak.png" alt="ThingSpeakCharts" width="350"/>
+<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/thingtweet.png" alt="ThingTweet" width="350"/>
