@@ -7,7 +7,7 @@
 The aim of the project is to to define weather dependent “windows of opportunity”, get local weather forecast data, identify and take an action to make use of those opportunities.
 
 ## Blynk App
-============
+------------
 
 <p>
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/Screenshot_blynk.jpg?raw=true" alt="BlynkScreenShot" width="250"/>
@@ -17,7 +17,7 @@ There are two web page buttons, first in the top right to www.met.ie for the loc
 </p>
 
 ## Raspberry Pi
-===============
+---------------
 
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/pi.jpg" alt="BlynkScreenShotOff" width="250"/>
 
@@ -49,5 +49,6 @@ Displays current status, takes input for begining or ending the drying process
 
 
 ## ThingSpeak Channel
+---------------------
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/thingspeak.png" alt="ThingSpeakCharts" width="350"/>
 <img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/thingtweet.png" alt="ThingTweet" width="350"/>
