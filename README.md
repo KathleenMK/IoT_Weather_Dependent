@@ -30,17 +30,27 @@ https://prodapi.metweb.ie/weather/details/52.16235/-7.15244
 
 #### Sensors
 
-Rain Sensor Module Circuit details:
+__Rain Sensor Module Circuit details:__
 - AO, analog output, not connected 
 - DO, digital output, connected to GPIO 18 (pin #12)
 - GND, ground, connected to GND (pin #14)
 - VCC connected to voltage 3V (pin #17)
 
-Rain and hummidity sensor DHT11:
+<p>
+<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/rainSensor_wiring.png" width="250"/>
+  Image taken from: https://raspi.tv/2017/make-a-rain-alert-system-with-raspberry-pi
+</p>
+
+__Rain and hummidity sensor DHT11:__
 - Vcc+(+) connected to 5V (pin 4)
 - GND(-) connected to GND (pin 6)
 - Signal(out) connected to GPIO Pin 4 (pin 7)
 
+<p>
+<img src="https://github.com/KathleenMK/IoT_Weather_Dependent/blob/master/images/dht11_wiring.png" width="250"/>
+  Image taken from: https://www.thegeekpub.com/236867/using-the-dht11-temperature-sensor-with-the-raspberry-pi/
+</p>
+  
 #### Python script
 Processes all the above and sends to Blynk
 
