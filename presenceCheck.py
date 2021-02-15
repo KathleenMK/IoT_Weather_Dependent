@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 #coding=utf-8
 #from presence-detector.pyfile from week7
+# MAC addresses required on line 12
 
 import subprocess
 import logging
@@ -8,8 +9,8 @@ import logging
 logging.basicConfig(filename='log.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 
 #dictionary of known devices 
-devices = [{"name":"My Phone", "mac":"28:33:34:AC:DF:A6"}
-            #, {"name":"Someone Else", "mac":"08:7A:4C:EE:3B:7F"}
+devices = [{"name":"My Phone", "mac":""}    #MAC addresses are required
+            #, {"name":"Someone Else", "mac":""}
         ]
 
 # Returns the list of known devices found on the network

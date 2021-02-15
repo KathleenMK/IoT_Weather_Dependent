@@ -5,6 +5,7 @@ Also takes readings from a rain sensor to alert if rain is detected
 Also takes readings from a hummidity/temperature sensor and sends current conditions to the Blynk app and ThingSpeak Channel
 Determines what and when notifications are sent
 displays on sense hat and takes input from the sensehat joystick
+BLYNK authorisation code and home coordinates need to be populated on lines 66 and 236
 """
 
 import requests   # https://www.w3schools.com/python/ref_requests_get.asp 28Nov20
@@ -62,7 +63,7 @@ def writeData(dry,humi,temp,rain,dryRain):
 
 """ Setting up the Blynk interface
 """
-BLYNK_AUTH = 'LTVERrZ1k3ghsbg-6wzZuZQRZWfwBbpS'
+BLYNK_AUTH = ''     #Authorisation code required
 
 # initialize Blynk
 blynk = blynklib.Blynk(BLYNK_AUTH)
@@ -232,7 +233,7 @@ def write_virtual_pin_handler(pin, value):
     longitude = float(value[1])
     altitude = float(value[2])
     speed = float(value[3])
-    home = (52.1702,-7.15015)
+    home = (,)  #Home coordinates are required
     phone = (latitude,longitude)
     global distanceFromHome
     distanceFromHome = round(hs.haversine(home,phone),4) #measures distance in km
